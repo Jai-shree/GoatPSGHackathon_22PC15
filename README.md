@@ -56,16 +56,3 @@ The system is organized into the following components:
 
 - **GUI**:
   - `FleetGUI`: Provides the graphical interface for visualizing and interacting with the system.
-
-## Known Limitations
-
-- Traffic negotiation may occasionally lead to deadlocks in complex scenarios with many robots.
-- Performance may degrade with a very large number of robots (>50) due to the visualization overhead.
-
-## License
-
-[License information]
-
-## Credits
-
-Developed as part of the PSG Hackathon.
