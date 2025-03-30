@@ -56,3 +56,6 @@ The system is organized into the following components:
 
 - **GUI**:
   - `FleetGUI`: Provides the graphical interface for visualizing and interacting with the system.
+ 
+OUTPUT:
+![Screenshot 2025-03-30 193132](https://github.com/user-attachments/assets/d6da96cf-3db9-4009-bf96-cbd65a4d9505)
