@@ -1,0 +1,52 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Fleet Management Server"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "fleet_gui"
+
+[[workflows.workflow]]
+name = "Fleet Management Server"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python src/main.py"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "fleet_gui"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python src/main.py"
+
+[deployment]
+run = ["sh", "-c", "python src/main.py"]
