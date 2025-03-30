@@ -59,3 +59,6 @@ The system is organized into the following components:
  
 OUTPUT SCREEN:
 ![Screenshot 2025-03-30 193132](https://github.com/user-attachments/assets/d6da96cf-3db9-4009-bf96-cbd65a4d9505)
+
+OUTPUT VIDEO LINK: https://www.loom.com/share/8a0154ffd44a46318edf312f5fabc39e?sid=021ad36f-ab65-4592-9c28-d3302c889765
+
